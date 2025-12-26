@@ -1,7 +1,5 @@
 # ETL_pipeline_AWS
-Here’s a **full, polished README.md** for your Athena ETL project. You can copy this directly into your repository:
 
-```markdown
 # Athena ETL Project
 
 This project demonstrates an ETL workflow using **AWS Athena**, **S3**, and **Lambda** to process and analyze data. The workflow extracts data from S3, transforms it using SQL and Lambda scripts, and stores the processed results back in S3 for querying via Athena.
@@ -21,7 +19,6 @@ The goal of this project is to demonstrate an end-to-end ETL pipeline using AWS 
 3. **Querying**: AWS Athena reads processed data from S3.  
 4. **Results**: Output CSVs stored back in S3.  
 
-*Diagram (Optional):*  
 
 ```
 
@@ -40,35 +37,6 @@ S3 Raw Data --> Lambda/SQL ETL --> S3 Processed Data --> Athena Query
 
 ---
 
-## Setup & Execution
-
-1. **Upload raw data** to an S3 bucket.  
-2. **Create Athena tables** using the SQL scripts in `queries/create_tables.sql`.  
-3. **Run ETL process**:
-   - If using Lambda, deploy the function and run it on your S3 input.  
-   - Alternatively, execute the transformation queries in Athena.  
-4. **Query transformed data** using `queries/sample_select_queries.sql`.  
-5. **Results** are stored back in S3 
-
----
-
-## Sample Queries
-
-```sql
--- Top 10 most profitable products
-SELECT product_name, total_profit
-FROM top_10_profitable_products
-ORDER BY total_profit DESC
-LIMIT 10;
-
--- Sales trend over months
-SELECT month, SUM(sales_amount) as total_sales
-FROM sales_data
-GROUP BY month
-ORDER BY month;
-````
-
----
 
 ## Sample Output
 
@@ -87,6 +55,4 @@ ORDER BY month;
 ---
 
 
-
-Do you want me to do that?
 ```
