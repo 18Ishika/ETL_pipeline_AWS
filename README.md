@@ -50,9 +50,3 @@ S3 Raw Data --> Lambda/SQL ETL --> S3 Processed Data --> Athena Query
 
 
 
----
-
----
-
-
-```
