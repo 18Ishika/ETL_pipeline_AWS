@@ -17,7 +17,9 @@ The goal of this project is to demonstrate an end-to-end ETL pipeline using AWS 
 1. **Source Data**: Raw CSV files stored in S3.  
 2. **ETL Process**: AWS Lambda (or SQL scripts) transform the data.  
 3. **Querying**: AWS Athena reads processed data from S3.  
-4. **Results**: Output CSVs stored back in S3.  
+4. **Results**: Output CSVs stored back in S3.
+   <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/946b4d52-3a3f-45a5-acc4-c8fa9afdac02" />
+
 
 
 ```
